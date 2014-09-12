@@ -1,0 +1,126 @@
+/* Menu Logo */
+.S3menulogo {
+    background: $menu_logo left top no-repeat;
+    text-shadow: none;
+    padding: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: $menu_logo_width;
+    height: 28px;
+    display: inline-block;
+}
+
+/* Top bar */
+.top-bar {
+    color: $top_bar_fgcolor;
+    background-color: $top_bar_bgcolor;
+    .menu-toggle input {
+        margin-right: 5px;
+    }
+}
+.top-bar-section {
+    ul li {
+        &:not(.has-form) a:not(.button) {
+            color: $top_bar_fgcolor;
+            background-color: $top_bar_bgcolor;
+            &:hover {
+                color: $top_bar_fgcolor_hover;
+                background-color: $top_bar_bgcolor_hover;
+            }
+        }
+        &.active {
+            &:not(.has-form) a:not(.button) {
+                color: $top_bar_fgcolor_active;
+                background-color: $top_bar_bgcolor_active;
+                &:hover {
+                    color: $top_bar_fgcolor_active_hover;
+                    background-color: $top_bar_bgcolor_active_hover;
+                }
+            }
+        }
+        &.has-dropdown {
+            &:hover > a {
+                background-color: $top_bar_bgcolor_hover;
+            }
+        }
+    }
+    ul.dropdown li {
+        &:not(.has-form) a:not(.button) {
+            color: $top_bar_dropdown_fgcolor;
+            background-color: $top_bar_dropdown_bgcolor;
+            &:hover {
+                color: $top_bar_dropdown_fgcolor_hover;
+                background-color: $top_bar_dropdown_bgcolor_hover;
+            }
+        }
+        &.active {
+            &:not(.has-form) a:not(.button) {
+                color: $top_bar_dropdown_fgcolor_active;
+                background-color: $top_bar_dropdown_bgcolor_active;
+                &:hover {
+                    color: $top_bar_dropdown_fgcolor_active_hover;
+                    background-color: $top_bar_dropdown_bgcolor_active_hover;
+                }
+            }
+        }
+    }
+    // Special style for first item, use .menu-home class
+    li.menu-home a {
+        font-weight: bold !important;
+        font-size: 1.4em !important;
+        text-transform: capitalize !important;
+    }
+}
+
+/* Side Menu */
+.sidebar {
+    background: none repeat scroll 0 0 $side_nav_bgcolor;
+    margin-top: 10px;
+}
+.side-nav {
+    li {
+        line-height: 1.2;
+        list-style-type: none;
+        list-style-position: inside;
+        margin:0;
+        padding:0;
+        &:last-child {
+            margin-bottom: 4px;
+        }
+        & > a:not(.button) {
+            padding: 3px;
+            color: $side_nav_fgcolor;
+            background-color: $side_nav_bgcolor;
+        }
+        &:hover > a:not(.button) {
+            color: $side_nav_fgcolor_hover;
+            background-color: $side_nav_bgcolor_hover;
+        }
+        &.heading {
+            text-transform: uppercase;
+            font-weight: bold;
+            border-top: 1px solid $side_nav_color_section_divider;
+            & > a:not(button) {
+                padding: 6px 3px 3px 6px;
+                color: $side_nav_fgcolor_heading;
+                background-color: $side_nav_bgcolor_heading;
+            }
+        }
+        &.active {
+            & > a:first-child:not(.button) {
+                font-weight: bold;
+                color: $side_nav_fgcolor_active;
+                background-color: $side_nav_bgcolor_active;
+                &:hover {
+                    color: $side_nav_fgcolor_hover;
+                    background-color: $side_nav_bgcolor_hover;
+                }
+            }
+        }
+        &.divider {
+            border-top: 1px solid $side_nav_color_divider_item;
+            height: 0;
+            list-style: none;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#!/bin/bash
+dirlist=$(find $1 -mindepth 1 -maxdepth 1 -type d)
+
+for dir in $dirlist
+do
+    echo $dir
+    cd $dir
+    if [ -e "scss/style.scss" ]; then
+        if [ -e "config.rb" ]; then
+            compass compile
+        else
+            compass compile -c ../config.rb
+        fi
+    fi
+    cd ..
+done

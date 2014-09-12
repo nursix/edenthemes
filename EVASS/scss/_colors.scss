@@ -1,0 +1,76 @@
+// Top bar
+$top_bar_bgcolor: #0c0e0f;
+$top_bar_bgcolor_hover: #bdb6b0;
+$top_bar_bgcolor_active: #73726f;
+$top_bar_bgcolor_active_hover: $top_bar_bgcolor_hover;
+
+$top_bar_fgcolor: #ffffff;
+$top_bar_fgcolor_hover: $top_bar_fgcolor;
+$top_bar_fgcolor_active: $top_bar_fgcolor;
+$top_bar_fgcolor_active_hover: $top_bar_fgcolor;
+
+$top_bar_dropdown_bgcolor: #777879;
+$top_bar_dropdown_bgcolor_hover: $top_bar_bgcolor_hover;
+$top_bar_dropdown_bgcolor_active: #979899;
+$top_bar_dropdown_bgcolor_active_hover: $top_bar_bgcolor_hover;
+
+$top_bar_dropdown_fgcolor: $top_bar_fgcolor;
+$top_bar_dropdown_fgcolor_hover: $top_bar_fgcolor;
+$top_bar_dropdown_fgcolor_active: $top_bar_fgcolor;
+$top_bar_dropdown_fgcolor_active_hover:  $top_bar_fgcolor;
+
+// Side menu
+$side_nav_bgcolor: #bdb6b0;
+$side_nav_fgcolor: #222222;
+$side_nav_bgcolor_heading: $side_nav_bgcolor;
+$side_nav_fgcolor_heading: $side_nav_fgcolor;
+$side_nav_bgcolor_hover: #f1edec;
+$side_nav_fgcolor_hover: #222222;
+$side_nav_bgcolor_active: #73726f;
+$side_nav_fgcolor_active: #ffffff;
+$side_nav_color_section_divider: #ada6a0;
+$side_nav_color_divider_item: #ffffff;
+
+// RHeader tabs
+$rheader_tabs_fgcolor_inactive: #ffffff;
+$rheader_tabs_fgcolor_inactive_hover: #ffffff;
+$rheader_tabs_bgcolor_inactive: #2ba6cb;
+$rheader_tabs_bgcolor_inactive_hover: #1f7994;
+$rheader_tabs_fgcolor_active: #666666;
+$rheader_tabs_fgcolor_active_hover: #666666;
+$rheader_tabs_bgcolor_active: #ffffff;
+$rheader_tabs_bgcolor_active_hover: #f1edec;
+
+// Datatables
+$datatables_bgcolor_odd: #f7f8f9;
+$datatables_bgcolor_odd_highlight: #f0f1f2;
+$datatables_bgcolor_even: #ffffff;
+$datatables_bgcolor_even_highlight: #fafafa;
+$datatables_border_color: #cccccc;
+$datatables_bgcolor_head: #ffffff;
+$datatables_bgcolor_foot: #f7f8f9;
+
+// Action buttons
+$action_btn_fgcolor_debug: #ffffff;
+$action_btn_bgcolor_debug: #dddddd;
+$action_btn_fgcolor_debug_hover: #ffffff;
+$action_btn_bgcolor_debug_hover: #a0a0a0;
+$action_btn_fgcolor_default: #ffffff;
+$action_btn_bgcolor_default: #2ba6cb;
+$action_btn_fgcolor_default_hover: #ffffff;
+$action_btn_bgcolor_default_hover: #1f7994;
+$action_btn_fgcolor_alert: #ffffff;
+$action_btn_bgcolor_alert: #c60f13;
+$action_btn_fgcolor_alert_hover: #ffffff;
+$action_btn_bgcolor_alert_hover: #a20c10;
+$action_btn_fgcolor_disabled: #ffffff;
+$action_btn_bgcolor_disabled: #c0c0c0;
+
+// Forms
+$form_container_bgcolor: #fefefe;
+$form_error_bgcolor: #c60f13;
+$item_container_controls_bgcolor: #fafafa;
+
+// Alerts
+$alert_border_color: #b2b2b2;
+$alert_box_shadow_color: #aaaaa7;
