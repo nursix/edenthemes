@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+$pt_border_color: #ccc;
+$pt_chart_bgcolor: #fffdf6;
+$pt_chart_border_color: #999;
+
 /* Pivot Table Reports */
 
 .pt-form fieldset legend button:first-child {
@@ -31,9 +35,9 @@
 
 /* Chart contents */
 .pt-chart-contents {
-    background-color: #fffdf6;
+    background-color: $pt_chart_bgcolor;
     padding: 8px;
-    border: 1px solid #999;
+    border: 1px solid $pt_chart_border_color;
     margin-top: 5px;
     margin-bottom: 5px;
     position: relative;
@@ -75,6 +79,11 @@
             /* override jQuery.dataTables.css */
             border-bottom: 0;
         }
+        tr.pt-totals-row th.pt-totals-header {
+            /* override jQuery.dataTables.css */
+            border-bottom: 1px solid $pt_border_color;
+            border-top: 2px solid $pt_border_color;
+        }
         .pt-totals-header,
         .pt-total,
         .pt-row-total,
@@ -83,11 +92,11 @@
         }
         .pt-total,
         .pt-col-total {
-            border-top: 2px solid #ccc;
+            border-top: 2px solid $pt_border_color;
         }
         .pt-total,
         .pt-row-total {
-            border-left: 2px solid #ccc;
+            border-left: 2px solid $pt_border_color;
         }
     }
 }
