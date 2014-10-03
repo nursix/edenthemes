@@ -71,6 +71,24 @@
     min-height: 16px;
     .pt-table {
         overflow: auto;
+        th {
+            /* override jQuery.dataTables.css */
+            border-bottom: 0;
+        }
+        .pt-totals-header,
+        .pt-total,
+        .pt-row-total,
+        .pt-col-total {
+            font-weight: bold;
+        }
+        .pt-total,
+        .pt-col-total {
+            border-top: 2px solid #ccc;
+        }
+        .pt-total,
+        .pt-row-total {
+            border-left: 2px solid #ccc;
+        }
     }
 }
 
