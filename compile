@@ -12,5 +12,12 @@ do
             compass compile -c ../config.rb
         fi
     fi
+    if [ -e "scss/report.scss" ]; then
+        if [ -e "config.rb" ]; then
+            compass compile
+        else
+            compass compile -c ../config.rb
+        fi
+    fi
     cd ..
 done

@@ -1,0 +1,163 @@
+/* Pivot Table Reports */
+.pt-form fieldset legend button:first-child {
+  /* hide initially, made visible by script */
+  display: none;
+}
+
+/* Chart options */
+.pt-chart-icon {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.pt-chart-label {
+  float: left;
+  margin-right: 5px;
+}
+
+.pt-pchart {
+  background: url(../../img/report/pchart.png) center no-repeat;
+}
+
+.pt-vchart {
+  background: url(../../img/report/vchart.png) center no-repeat;
+}
+
+.pt-hchart {
+  background: url(../../img/report/hchart.png) center no-repeat;
+}
+
+/* Chart contents */
+.pt-chart-contents {
+  background-color: #fffdf6;
+  padding: 8px;
+  border: 1px solid #999;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.pt-chart-contents .pt-chart-title {
+  position: absolute;
+  left: 8;
+  top: 0;
+}
+.pt-chart-contents .pt-hide-chart {
+  cursor: pointer;
+  min-height: 16px;
+  min-width: 16px;
+  background: url(../../img/cross.png) right top no-repeat;
+}
+.pt-chart-contents .pt-chart {
+  margin-top: 20px;
+}
+
+/* Onhover-tooltips */
+.pt-tooltip {
+  text-align: center;
+  padding: 4px;
+}
+.pt-tooltip .pt-tooltip-label {
+  font-weight: bold;
+}
+.pt-tooltip .pt-tooltip-label,
+.pt-tooltip .pt-tooltip-text {
+  max-width: 175px;
+  white-space: normal;
+}
+
+/* Table contents */
+.pt-table-contents {
+  min-height: 16px;
+}
+.pt-table-contents .pt-table {
+  overflow: auto;
+}
+
+/* Throbber */
+.pt-throbber {
+  float: right;
+  padding: 5px;
+  z-index: 999;
+}
+
+/* Table toggle */
+.pt-toggle-table {
+  font-size: 10px;
+  cursor: pointer;
+  color: #039;
+  text-decoration: underline;
+  margin-bottom: 3px;
+}
+.pt-toggle-table.pt-show-table {
+  display: none;
+}
+
+.pt-toggle-table,
+.pt-chart-controls,
+.pt-chart-contents,
+.pt-table-controls,
+.pt-table-contents {
+  clear: left;
+}
+
+/* Time Plot Reports */
+.tp-form fieldset legend button:first-child {
+  /* hide initially, made visible by script */
+  display: none;
+}
+
+/* Static Time Plot SVG styles */
+.axis {
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.grid {
+  fill: none;
+}
+.grid .tick {
+  stroke: #ccc;
+  stroke-width: 0.5;
+  opacity: 0.7;
+}
+.grid path {
+  stroke-width: 0;
+}
+
+rect.basearea {
+  opacity: 0.4;
+  stroke-width: 0;
+}
+rect.basearea.positive {
+  fill: lightgreen;
+}
+rect.basearea.negative {
+  fill: #fcc;
+}
+rect.bar.positive {
+  fill: steelblue;
+}
+rect.bar.negative {
+  fill: brown;
+}
+
+line.baseline.positive {
+  stroke: green;
+}
+line.baseline.negative {
+  stroke: red;
+}
+
+text.empty {
+  font-size: 12px;
+  font-style: italic;
+  fill: black;
+}
