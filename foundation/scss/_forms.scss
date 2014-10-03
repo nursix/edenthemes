@@ -38,6 +38,9 @@ form {
     table.embeddedComponent {
         border-collapse: separate;
     }
+    &.auth_login #submit_record__row {
+        white-space: pre;
+    }
 }
 
 /* General Widgets */
