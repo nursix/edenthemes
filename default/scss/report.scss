@@ -58,6 +58,8 @@ $pt_chart_border_color: #999;
 }
 /* Onhover-tooltips */
 .pt-tooltip {
+    font-family: Arial;
+    font-size: 13px;
     text-align: center;
     padding: 4px;
     .pt-tooltip-label {
