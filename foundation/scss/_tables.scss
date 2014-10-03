@@ -15,9 +15,9 @@
 }
 
 table.dataTable {
-    th, td {
+    thead th, th, td {
         border: 1px solid $datatables_border_color;
-        padding: 0.7em 0.7em 0.7em 0.5em;
+        padding: 0.2em 1.5em 0.2em 0.5em;
     }
     thead {
         th, td {

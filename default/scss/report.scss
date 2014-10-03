@@ -98,6 +98,34 @@ $pt_chart_border_color: #999;
         .pt-row-total {
             border-left: 2px solid $pt_border_color;
         }
+        .pt-cell-value {
+            float: left;
+            li {
+                font-size: 0.8rem;
+            }
+        }
+        .pt-cell-records {
+            clear: left;
+        }
+        td {
+            min-width: 60px;
+            padding-right: 16px;
+            white-space: nowrap;
+            .pt-cell-zoom {
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                float: right;
+                margin-left: 5px;
+                background: url(../../img/silk/magnifier_zoom_in.png) no-repeat top right;
+                &.opened {
+                    background-image: url(../../img/silk/magnifier_zoom_out.png);
+                }
+            }
+        }
+        tfoot {
+            font-style: italic;
+        }
     }
 }
 
