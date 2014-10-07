@@ -32,6 +32,9 @@ $pt_chart_border_color: #999;
 .pt-hchart {
     background: url(../../img/report/hchart.png) center no-repeat;
 }
+.pt-schart {
+  background: url(../../img/report/pchart.png) center no-repeat;
+}
 
 /* Chart contents */
 .pt-chart-contents {
@@ -54,6 +57,29 @@ $pt_chart_border_color: #999;
     }
     .pt-chart {
         margin-top: 20px;
+    }
+    .pt-spectrum-pie {
+        height: 140px;
+        svg.nv {
+            float: left;
+            width: auto;
+        }
+    }
+    .pt-spectrum-bar {
+        height: 280px;
+        clear: left;
+    }
+    .pt-spectrum-form {
+        float: left;
+        label {
+            font-weight: bold;
+            margin-right: 8px;
+            display: block;
+        }
+        select {
+            font-size: 0.875rem;
+            max-width: 360px;
+        }
     }
 }
 /* Onhover-tooltips */
