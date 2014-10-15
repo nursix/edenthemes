@@ -82,6 +82,9 @@ select {
 }
 
 /* Form and Item containers */
+#last_update {
+    float: none;
+}
 .form-container,
 .item-container {
     form {
