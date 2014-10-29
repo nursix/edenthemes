@@ -4,14 +4,19 @@ $pt_border_color: #ccc;
 $pt_chart_bgcolor: #fffdf6;
 $pt_chart_border_color: #999;
 
-/* Pivot Table Reports */
-
+/* Pivot Table and Time Plot Reports */
+.tp-form fieldset legend button:first-child,
 .pt-form fieldset legend button:first-child {
     /* hide initially, made visible by script */
     display: none;
 }
 
 /* Chart options */
+.tp-chart-tops,
+.pt-chart-opts {
+  height: 1.0em;
+}
+.tp-chart-icon,
 .pt-chart-icon {
     width: 16px;
     height: 16px;
@@ -19,9 +24,17 @@ $pt_chart_border_color: #999;
     margin-right: 5px;
     cursor: pointer;
 }
+.tp-chart-label,
 .pt-chart-label {
+    font-size: 0.7em;
     float: left;
-    margin-right: 5px;
+    margin-right: 8px;
+}
+.tp-lchart {
+  background: url(../../img/report/lchart.png) center no-repeat;
+}
+.tp-bchart {
+  background: url(../../img/report/vchart.png) center no-repeat;
 }
 .pt-pchart {
     background: url(../../img/report/pchart.png) center no-repeat;
@@ -37,6 +50,7 @@ $pt_chart_border_color: #999;
 }
 
 /* Chart contents */
+.tp-chart-contents,
 .pt-chart-contents {
     background-color: $pt_chart_bgcolor;
     padding: 8px;
@@ -44,10 +58,16 @@ $pt_chart_border_color: #999;
     margin-top: 5px;
     margin-bottom: 5px;
     position: relative;
+}
+.pt-chart-contents {
     .pt-chart-title {
         position: absolute;
         left: 8;
         top: 0;
+        h4 {
+            font-size: 1.0em;
+            font-weight: normal;
+        }
     }
     .pt-hide-chart {
         cursor: pointer;
@@ -158,10 +178,19 @@ $pt_chart_border_color: #999;
 }
 
 /* Throbber */
+.tp-throbber,
 .pt-throbber {
     float: right;
     padding: 5px;
     z-index: 999;
+}
+
+/* Empty-sections */
+.tp-empty,
+.pt-empty,
+.pt-no-data {
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 /* Table toggle */
@@ -177,78 +206,12 @@ $pt_chart_border_color: #999;
 }
 
 // DRRPP/NYC legacy styles
+.tp-chart-controls,
+.tp-chart.contents,
 .pt-toggle-table,
 .pt-chart-controls,
 .pt-chart-contents,
 .pt-table-controls,
 .pt-table-contents {
     clear: left;
-}
-
-/* Time Plot Reports */
-
-.tp-form fieldset legend button:first-child {
-    /* hide initially, made visible by script */
-    display: none;
-}
-
-/* Static Time Plot SVG styles */
-.axis {
-    font: 10px sans-serif;
-    path,
-    line {
-        fill: none;
-        stroke: #000;
-        shape-rendering: crispEdges;
-    }
-}
-
-.grid {
-    fill: none;
-    .tick {
-        stroke: #ccc;
-        stroke-width: 0.5;
-        opacity: 0.7;
-    }
-    path {
-        stroke-width: 0;
-    }
-}
-
-rect {
-    &.basearea {
-        opacity: 0.4;
-        stroke-width: 0;
-        &.positive {
-            fill: lightgreen;
-        }
-        &.negative {
-            fill: #fcc;
-        }
-    }
-    &.bar {
-        &.positive {
-            fill: steelblue;
-        }
-        &.negative {
-            fill: brown;
-        }
-    }
-}
-
-line {
-    &.baseline {
-        &.positive {
-            stroke: green;
-        }
-        &.negative {
-            stroke: red;
-        }
-    }
-}
-
-text.empty {
-    font-size: 12px;
-    font-style: italic;
-    fill: black;
 }
