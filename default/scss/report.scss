@@ -11,6 +11,22 @@ $pt_chart_border_color: #999;
     display: none;
 }
 
+.pt-form {
+    .pt-rows {
+        margin-right: 0.5rem;
+    }
+    .pt-cols {
+        margin-left: 0.5rem;
+    }
+    .pt-axis-options {
+        select,
+        label {
+            display: inline-block;
+            width: auto;
+        }
+    }
+}
+
 /* Chart options */
 .tp-chart-tops,
 .pt-chart-opts {
