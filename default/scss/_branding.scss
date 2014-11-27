@@ -1,0 +1,14 @@
+// Non-colour branding elements, e.g. logos, background-images etc.
+$menu_logo: url(../../img/S3menu_logo.png);
+$menu_logo_width: 35px;
+.inline-throbber {
+    background-image: url(../../img/sunflower_fade_indicator.gif);
+}
+.loading {
+    background: url(../../img/sunflower_spin_throbber.gif) center no-repeat !important;
+}
+.throbber,
+.layer_throbber,
+.map_loader {
+    background-image: url(../../img/sunflower_spin_throbber.gif);
+}
