@@ -109,7 +109,7 @@ select {
             max-width: 100%;
         }
         &:not(.filter-form):not(.auth_login):not(.auth_register) {
-            input[type="text"]:not(.double):not(.datetimepicker):not(.date) {
+            input[type="text"]:not(.double):not(.datetimepicker):not(.date):not(.dms-input) {
                 width: 500px !important;
             }
         }
