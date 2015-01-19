@@ -32,6 +32,11 @@
 .thumbnail {
     border: 1px solid #CCC;
 }
+.widget-container #list-btn-add {
+    margin-bottom: 0;
+    position: relative;
+    top: 1.0rem;
+}
 
 /* Links should ALWAYS be unvisited */
 #content {
