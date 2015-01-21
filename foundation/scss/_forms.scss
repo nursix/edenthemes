@@ -86,8 +86,12 @@ input[type="time"],
 input[type="url"],
 select {
     width: auto !important;
+    max-width: 100%;
 }
-
+textarea {
+    resize: both;
+    max-width: 100%;
+}
 /* Form and Item containers */
 #last_update {
     float: none;
@@ -102,6 +106,9 @@ select {
     overflow: inherit;
     .controls {
         display: inline-block;
+        &:not(.columns) {
+            width: 100%;
+        }
     }
 }
 .form-container {
@@ -156,8 +163,11 @@ select {
     .stickytip,
     .ajaxtip {
         display: block;
-        margin-top: 10px;
         padding: 0;
         width: 60px;
+    }
+    .s3_add_resource_link {
+        display: inline-block;
+        margin: -3px 0 -3px 5px;
     }
 }
