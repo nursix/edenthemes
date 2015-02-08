@@ -27,13 +27,7 @@
     float: right;
     margin-right: 1.0rem;
 }
-.comment-box {
-    background: none repeat scroll 0 0 #f5f5f5;
-}
-table.embeddedComponent,
-form table.embeddedComponent td {
-    border: none;
-}
+
 /* Summary tabs */
 .ui-tabs .ui-tabs-panel {
     padding: 0.5em;
@@ -131,6 +125,11 @@ input.date.hasDatepicker {
     .dl-row {
         border: 0;
     }
+}
+
+/* Comment feeds */
+.comment-box {
+    background: none repeat scroll 0 0 $comments_feed_item_bgcolor;
 }
 
 /* Iframe Map (Location Represent links) */

@@ -107,7 +107,7 @@ textarea {
     .controls {
         display: inline-block;
         &:not(.columns) {
-            width: 100%;
+            max-width: 100%;
         }
     }
 }
@@ -124,6 +124,12 @@ textarea {
         &:not(.filter-form):not(.auth_login):not(.auth_register) {
             input[type="text"]:not(.double):not(.datetimepicker):not(.date):not(.dms-input) {
                 width: 20rem !important;
+            }
+        }
+        table.embeddedComponent {
+            border: 1px solid #dddddd;
+            td {
+                border: none;
             }
         }
     }
