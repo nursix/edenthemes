@@ -1,0 +1,34 @@
+// Miscellaneous:
+// place anything here that is not covered by any sections
+.row.home-top {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+.row.home-middle {
+    padding: 20px 10px;
+}
+#logo, #slogan {
+    display: inline-flex;
+    vertical-align: middle;
+}
+#logo {
+    margin-right: 10px;
+}
+#slogan {
+    margin-top:10px;
+    font-weight: bold;
+}
+#poweredby {
+    float: none;
+}
+.top-bar {
+    li.menu-home {
+        a {
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        width: 0px;
+        margin-left: 8px;
+    }
+}
