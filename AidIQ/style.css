@@ -740,11 +740,18 @@ input.date.hasDatepicker {
 
 .row.home-top {
   padding: 10px;
+  background-color: #fffefc;
   border-bottom: 1px solid #eeeeee;
 }
 
 .row.home-middle {
   padding: 20px 10px;
+  background-color: #fffefc;
+  background: -webkit-linear-gradient(#2CA1DB, #fffefc);
+  background: -o-linear-gradient(#2CA1DB, #fffefc);
+  background: -moz-linear-gradient(#2CA1DB, #fffefc);
+  background: linear-gradient(#2CA1DB, #fffefc);
+  min-height: 800px;
 }
 
 #logo, #slogan {
@@ -761,6 +768,11 @@ input.date.hasDatepicker {
   font-weight: bold;
 }
 
+#contents {
+  background-color: #fffefc;
+  padding: 0.8rem;
+}
+
 #poweredby {
   float: none;
 }
@@ -770,7 +782,9 @@ input.date.hasDatepicker {
   margin-left: 8px;
 }
 .top-bar li.menu-home a {
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
+  visibility: hidden;
+}
+
+.icon {
+  margin-right: 0.3rem;
 }
