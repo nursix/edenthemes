@@ -2,9 +2,14 @@
 form {
     font-size: 0.8em;
     .form-row {
-        margin-top: 5px !important;
-        & > .columns > label {
-            font-weight: bold;
+        margin-top: 0.325rem !important;
+        & > .columns {
+            &:first-child {
+                overflow: hidden;
+            }
+            & > label {
+                font-weight: bold;
+            }
         }
     }
     label.inline {
