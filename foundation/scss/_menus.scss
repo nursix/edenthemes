@@ -46,7 +46,7 @@
         }
     }
     ul.dropdown li {
-        &:not(.has-form) a:not(.button) {
+        &:not(.has-form):not(.active) a:not(.button) {
             color: $top_bar_dropdown_fgcolor;
             background-color: $top_bar_dropdown_bgcolor;
             &:hover {
