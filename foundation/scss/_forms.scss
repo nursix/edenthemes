@@ -45,6 +45,7 @@ form {
         border-collapse: separate;
         td {
             border: none;
+            vertical-align: top;
         }
         .label-row td:empty {
             padding: 0;
