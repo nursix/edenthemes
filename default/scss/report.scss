@@ -163,7 +163,7 @@ $pt_chart_border_color: #999;
             border-left: 2px solid $pt_border_color;
         }
         .pt-cell-value {
-            float: left;
+            display: inline;
             li {
                 font-size: 0.8rem;
             }
@@ -179,7 +179,8 @@ $pt_chart_border_color: #999;
                 width: 16px;
                 height: 16px;
                 cursor: pointer;
-                float: right;
+                display: inline-block;
+                vertical-align: text-top;
                 margin-left: 5px;
                 background: url(../../img/silk/magnifier_zoom_in.png) no-repeat top right;
                 &.opened {
