@@ -3,6 +3,8 @@
 $pt_border_color: #ccc;
 $pt_chart_bgcolor: #fffdf6;
 $pt_chart_border_color: #999;
+$table_border_color: $pt_chart_border_color;
+$table_total_bgcolor: #eee;
 
 /* Pivot Table and Time Plot Reports */
 .tp-form fieldset legend button:first-child,
@@ -232,4 +234,44 @@ $pt_chart_border_color: #999;
 .pt-table-controls,
 .pt-table-contents {
     clear: left;
+}
+
+/* In grouped tables, separate groups visually */
+.gi-table table {
+    border-collapse: separate;
+
+    thead td,
+    tfoot td {
+        background-color: #333;
+        color: #fff;
+    }
+}
+.gi-group-footer.gi-level-1 {
+    td {
+        background-color: #999;
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
+}
+.gi-group-footer.gi-level-2 {
+    td {
+        border-bottom: 1px solid $table_border_color;
+        background-color: $table_total_bgcolor;
+    }
+}
+
+/* Show label for summary in tables */
+.gi-group-footer-inline-label {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1;
+    position: relative;
+    top: -0.1em;
+    margin: 0 0.25em 0 1em;
+    padding: 0.25em 0.75em;
+    text-transform: uppercase;
+    background-color: #ccc;
+    color: #666;
 }
