@@ -286,3 +286,14 @@ $table_total_bgcolor: #eee;
     background-color: #ccc;
     color: #666;
 }
+.gi-export-formats {
+    display: inline;
+    .gi-export {
+        height: 16px;
+        width: 16px;
+        display: block;
+        padding-bottom: 1.5rem;
+        background-repeat: no-repeat; // @todo: fix in default/widget.css?
+        cursor: pointer;
+    }
+}
