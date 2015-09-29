@@ -291,7 +291,8 @@ $table_total_bgcolor: #eee;
     .gi-export {
         height: 16px;
         width: 16px;
-        display: block;
+        display: inline-block;
+        padding-right: 1.2rem;
         padding-bottom: 1.5rem;
         background-repeat: no-repeat; // @todo: fix in default/widget.css?
         cursor: pointer;
