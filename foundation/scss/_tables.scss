@@ -55,14 +55,23 @@ table.dataTable {
         margin: 5px 0 5px;
     }
 }
+
+.dt-wrapper {
+    // Leave some space for pagination info (which is float,
+    // hence not adding space by itself)
+    margin-bottom: 1.5rem;
+}
+
 .dataTables_processing {
      padding: 14px 0 28px;
 }
+
 .dataTables_filter {
     text-align: left;
     font-size: 0.75rem;
     margin-right: 3rem;
 }
+
 .dt-export-options {
     float: right;
     .list_formats {
